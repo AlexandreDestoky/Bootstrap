@@ -1,0 +1,11 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.fondMenu {
+  background: #023047;
+}
+
+nav a:hover {
+  color:rgb(203, 206, 38) !important;
+}
