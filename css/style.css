@@ -1,11 +1,24 @@
 body {
   font-family: "Oswald", sans-serif;
+  /* background: #243414; */
 }
+/* MENU DE NAVIGATION */
 
 .fondMenu {
   background: #023047;
 }
 
+
 nav a:hover {
   color:rgb(203, 206, 38) !important;
+}
+
+/* CARROUSEL */
+.fondCarousel {
+  background: #8ea4af;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
 }
