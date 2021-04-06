@@ -25,3 +25,11 @@ nav a:hover {
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
+
+.grosseBordure {
+  border-width: 4px;
+}
+
+.grandTexte {
+  font-size: 2rem;
+}

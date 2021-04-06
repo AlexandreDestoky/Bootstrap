@@ -16,7 +16,7 @@
         <a class="nav-link text-white" href="#monCV">Mon CV</a>
       </li>
       <li class="nav-item mx-2">
-        <a class="nav-link text-white" href="#">Compétences</a>
+        <a class="nav-link text-white" href="#portfolio">Compétences</a>
       </li>
       <li class="nav-item mx-2">
         <a class="nav-link text-white" href="#">Portfolio</a>
