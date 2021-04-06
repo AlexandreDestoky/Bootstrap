@@ -1,6 +1,9 @@
 body {
   font-family: "Oswald", sans-serif;
-  /* background: #243414; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /* MENU DE NAVIGATION */
 
