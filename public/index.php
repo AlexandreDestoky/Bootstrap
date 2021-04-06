@@ -185,6 +185,8 @@
     </div>
   </div>
 </div>
+
+<footer class="fondMenu text-center text-white py-2 mt-4">@Alexandre Destoky</footer>
 <?php 
   $content = ob_get_clean();
   require "partials/template.php";

@@ -22,9 +22,6 @@
         <a class="nav-link text-white" href="#">Portfolio</a>
       </li>
       <li class="nav-item mx-2">
-        <a class="nav-link text-white" href="#">Témoignage</a>
-      </li>
-      <li class="nav-item mx-2">
         <a class="nav-link text-white" href="#">Contact</a>
       </li>
     </ul>
