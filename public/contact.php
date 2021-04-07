@@ -1,5 +1,13 @@
 <?php ob_start();?>
 
+<?php
+  if(isset($_POST["mail"])) {
+    echo $_POST["mail"]."</br>";
+    echo $_POST["objet"]."</br>";
+    echo $_POST["message"]."</br>";
+  }
+?>
+
 <div class="container text-center" >
   <h2 class="m-3">Mes infos personnelles</h2>
   <div class="table-responsive">
@@ -27,12 +35,12 @@
   <form method="POST" action="">
     <div class="form-group">
       <label for="exampleInputEmail1">Adresse Email</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" name="mail" placeholder="Entrez votre mail">
+      <input type="email" class="form-control" id="exampleInputEmail1" name="mail" placeholder="Entrez votre mail" required>
     </div>
     <div class="form-group">
       <label for="objet">Objet du mail</label>
-      <select class="form-control" id="objet" name="objet">
-        <option disabled selected="selected">Choisir</option>
+      <select class="form-control" id="objet" name="objet" required>
+        <option disabled selected="selected" value="">Choisir</option>
         <option value="question">Question</option>
         <option value="remarque">Remarque</option>
         <option value="autre">Autres</option>
@@ -40,7 +48,7 @@
     </div>
     <div class="form-group">
       <label for="message">Votre Message</label>
-      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Insérez votre message"></textarea>
+      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Insérez votre message" required></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Envoyer</button>
   </form>
