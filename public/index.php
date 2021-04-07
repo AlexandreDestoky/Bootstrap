@@ -1,4 +1,6 @@
-<?php ob_start();?>
+<?php ob_start();
+require "../utils/formatage.php";
+?>
 
 <div id="carouselExampleIndicators" class="carousel slide fondCarousel py-3" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -32,7 +34,7 @@
   </a>
 </div>
 <div class="container text-center" id="presentation">
-  <h2 class="m-3">Rick Roll</h2>
+  <?php  echo formatageTitre("Rick Roll"); ?>
   <div class="embed-responsive embed-responsive-16by9 my-5">
     <iframe
       width="560"
@@ -47,7 +49,7 @@
   </div>
 </div>
 <div class="container text-center mt-4" id="competences">
-  <h2>Mes Compétences</h2>
+  <?php  echo formatageTitre("Mes compétences"); ?>
   <div class="row my-3">
     <div class="col-md-4 col-6 my-4">
       <h3>HTML / CSS</h3>
@@ -89,7 +91,7 @@
 </div>
 
 <div class="container text-center mt-4" id="portfolio">
-  <h2>Portfolio</h2>
+<?php  echo formatageTitre("Portfolio"); ?>
   <div class="card-deck">
     <div class="card border-primary mb-3 grosseBordure">
       <div class="card-header bg-transparent border-primary grosseBordure grandTexte">Poulet</div>

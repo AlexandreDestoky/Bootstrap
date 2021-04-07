@@ -1,15 +1,22 @@
-<?php ob_start();?>
+<?php ob_start();
+  require "../utils/formatage.php";
+?>
 
 <?php
   if(isset($_POST["mail"])) {
-    echo $_POST["mail"]."</br>";
-    echo $_POST["objet"]."</br>";
-    echo $_POST["message"]."</br>";
-  }
-?>
+    $to = "adestoky@gmail.com";
+    $from = $_POST['mail'];
+    $objet = $_POST["objet"];
+    $message = $_POST["message"];
+    mail($to,$objet,$message,$from);
+    ?>
+    <div class="alert alert-success" role="alert">
+      Message envoyé !
+    </div>
+ <?php } ?>
 
 <div class="container text-center" >
-  <h2 class="m-3">Mes infos personnelles</h2>
+  <?php  echo formatageTitre("Mes infos personnelles"); ?>
   <div class="table-responsive">
     <table class="table table-borderless">
       <thead>
@@ -30,9 +37,9 @@
   </div>
 </div>
 
-<div class="container text-center col-12 col-md-6 mt-4">
-  <h2 class="m-3">Formulaire de contact</h2>
-  <form method="POST" action="">
+<div class="container text-center">
+  <?php  echo formatageTitre("Formulaire de contact"); ?>
+  <form method="POST" action="" class="col-12 col-md-6 m-auto">
     <div class="form-group">
       <label for="exampleInputEmail1">Adresse Email</label>
       <input type="email" class="form-control" id="exampleInputEmail1" name="mail" placeholder="Entrez votre mail" required>

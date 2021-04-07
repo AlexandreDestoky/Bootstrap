@@ -11,6 +11,10 @@ html {
   background: #023047;
 }
 
+.fondTitre {
+  background: rgb(230, 179, 50);
+}
+
 
 nav a:hover {
   color:rgb(203, 206, 38) !important;
