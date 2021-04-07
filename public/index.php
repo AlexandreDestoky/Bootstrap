@@ -46,7 +46,7 @@
     ></iframe>
   </div>
 </div>
-<div class="container text-center mt-4" id="monCV">
+<div class="container text-center mt-4" id="competences">
   <h2>Mes Compétences</h2>
   <div class="row my-3">
     <div class="col-md-4 col-6 my-4">
@@ -186,7 +186,6 @@
   </div>
 </div>
 
-<footer class="fondMenu text-center text-white py-2 mt-4">@Alexandre Destoky</footer>
 <?php 
   $content = ob_get_clean();
   require "partials/template.php";
