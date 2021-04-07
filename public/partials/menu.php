@@ -13,7 +13,7 @@
         <a class="nav-link text-white" href="index.php#presentation">Présentation</a>
       </li>
       <li class="nav-item mx-2">
-        <a class="nav-link text-white" href="index.php#">Mon CV</a>
+        <a class="nav-link text-white" href="../pdf/cv.pdf" download>Mon CV</a>
       </li>
       <li class="nav-item mx-2">
         <a class="nav-link text-white" href="index.php#competences">Compétences</a>

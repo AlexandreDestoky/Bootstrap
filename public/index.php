@@ -33,6 +33,11 @@ require "../utils/formatage.php";
     <span class="sr-only text-primary">Next</span>
   </a>
 </div>
+
+<div class="text-center mt-3">
+  <a href="../pdf/cv.pdf" download><button class="btn btn-outline-primary btn-lg">Télécharger le CV</button></a>
+</div>
+
 <div class="container text-center" id="presentation">
   <?php  echo formatageTitre("Rick Roll"); ?>
   <div class="embed-responsive embed-responsive-16by9 my-5">
